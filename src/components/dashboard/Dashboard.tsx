@@ -17,7 +17,7 @@ import {
   Cell
 } from "recharts"
 
-const COLORS = ["#f00", "#f59e0b", "#3b82f6"]
+const COLORS = ["#f00", "#f59e0b", "#3b82f6","#10b981"]
 
 const Dashboard = () => {
 
@@ -103,8 +103,15 @@ const Dashboard = () => {
     {
       name: "Completed",
       value: jobs.filter(j => j.status === "completed").length
+    },    {
+      name: "Pending",
+      value: jobs.filter(j => j.status === "pending").length
     }
+
   ]
+
+  // console.log(jobStatusData);
+  
 
 
   return (
