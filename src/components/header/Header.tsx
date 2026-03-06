@@ -24,9 +24,9 @@ const Header = ({
 
   const [showProfile,setShowProfile] = useState(false)
 
-  const [theme,setTheme] = useState(
-    localStorage.getItem("theme") || "light"
-  )
+  // const [theme,setTheme] = useState(
+  //   localStorage.getItem("theme") || "light"
+  // )
 
   const matches = useMatches()
   const currentMatch = matches[matches.length - 1]
@@ -34,14 +34,14 @@ const Header = ({
   const title = handle?.title || "Dashboard"
 
 
-  useEffect(()=>{
+  // useEffect(()=>{
 
-    document.documentElement.classList.remove("light","dark")
-    document.documentElement.classList.add(theme)
+  //   document.documentElement.classList.remove("light","dark")
+  //   document.documentElement.classList.add(theme)
 
-    localStorage.setItem("theme",theme)
+  //   localStorage.setItem("theme",theme)
 
-  },[theme])
+  // },[theme])
 
 
 
@@ -97,9 +97,9 @@ const Header = ({
   }
 
 
-  const toggleTheme = ()=>{
-    setTheme(theme==="light" ? "dark" : "light")
-  }
+  // const toggleTheme = ()=>{
+  //   setTheme(theme==="light" ? "dark" : "light")
+  // }
 
 
   return (
