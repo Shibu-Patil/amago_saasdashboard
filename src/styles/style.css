@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-main-bck: #ccc6; 
+}
+
+
+body{
+  background-color: #cccccc66;
+}
